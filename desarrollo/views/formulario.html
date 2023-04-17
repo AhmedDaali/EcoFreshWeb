@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/desarrollo/css/formulario.css">
+<title>Formulario de contacto</title>
+</head>
+<body>
+<div class="container align-items-center">
+   <form class="row g-4 mt-4">
+    <h3 class="display-2 text-primary tex-center">Solicita información</h3>
+        <div class="col-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" placeholder="Introduce tu nombre">
+        </div>
+
+        <div class="col-6">
+            <label for="Apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="Apellidos" placeholder="Introduce tus apellidos">
+        </div>
+
+        <div class="col-6 mt-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+
+        <div class="form-floating col-12">
+            <select class="form-select" id="Select">
+              <option selected>¿Cómo nos conociste?</option>
+              <option value="1">Por redes sociales</option>
+              <option value="2">Por un conocido</option>
+              <option value="3">A través de internet</option>
+              <option value="4">A través de un anuncio</option>
+            </select>
+            <label for="Select">Selecciona una respuesta</label>
+          </div>
+
+        <div class="col-12 mt-3">
+            <label for="Textarea">Consultas</label>
+            <textarea class="form-control" placeholder="Explique brevemente el motivo de su consulta" id="Textarea" style="height: auto;"></textarea>
+        </div>
+        
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+
+        </div>
+   </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

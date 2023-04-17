@@ -1,0 +1,11 @@
+body{
+background-image: url("/desarrollo/assets/jpg/couple-farm-with-tablet.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+label{
+    color: rgb(255, 255, 255);
+}
