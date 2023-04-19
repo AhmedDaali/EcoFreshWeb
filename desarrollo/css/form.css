@@ -6,7 +6,7 @@ body{
     height: 400px;
 }
 .col-md-3{
-    background: #cdf344;
+    background: #74cf88;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -27,7 +27,7 @@ body{
 }
 
 .col-md-9{
-    background: #d8ff4d72;
+    background: #f2f5ed;
     padding: 3%;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -36,12 +36,26 @@ body{
     font-weight:600;
 }
 .contact-form button{
-    background: #6D869B;
+    background: #74cf88;
     color: #fff;
     font-weight: 600;
     width: 30%;
 }
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #74cf88;
+}
 .contact-form button:focus{
     box-shadow:none;
+}
+
+.footer{
+    background-color: #74cf88;
+    padding: 1em 0;
+    text-align: center;
+    text-decoration-color: #ffffff;
+    margin-top: auto;
 }
 
