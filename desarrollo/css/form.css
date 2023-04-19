@@ -1,5 +1,6 @@
 body{
     background-color: #ffffff;
+    margin:0;
 }
 .contact{
     padding: 4%;
@@ -39,23 +40,31 @@ body{
     background: #74cf88;
     color: #fff;
     font-weight: 600;
+    margin-top: 10px;
     width: 30%;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #74cf88;
-}
+    background-color: #74cf88;
+   
+  }
+
 .contact-form button:focus{
     box-shadow:none;
 }
 
 .footer{
-    background-color: #74cf88;
-    padding: 1em 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
     text-align: center;
-    text-decoration-color: #ffffff;
-    margin-top: auto;
 }
+
+.footer a{
+    color:white;
+    padding: 3px;
+}
+
 
