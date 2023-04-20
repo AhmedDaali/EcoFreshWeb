@@ -1,3 +1,65 @@
-body{
-    background-image: url(/desarrollo/assets/jpg/img1.jpg);
-}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #585a61;
+  }
+  
+  a {
+    color: #5777ba;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #7b94c9;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.95);
+  }
+  
+  #header.header-transparent {
+    background: transparent;
+  }
+  
+  #header.header-scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  
+  #header .logo h1 a,
+  #header .logo h1 a:hover {
+    color: #5777ba;
+    text-decoration: none;
+  }
+  
+  #header .logo img {
+    margin: 0;
+    max-height: 40px;
+  }
