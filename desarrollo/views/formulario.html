@@ -13,62 +13,74 @@
 <link rel="stylesheet" href="/Instalar bp-ap/js/bootstrap.bundle.min.js"> <!--Librería de bootstrap/javaScript guardada en carpeta del proyecto-->
 </head>
 
-<div class="container contact">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="contact-info">
-                <img src="/desarrollo/assets/jpg/Logo.jpg" style="position: static; margin: 10px; border-radius: 30px">
-                
-                <h2>¡Contacta con nosotros!</h2>
-                <br>
-                <h5>Un miembro de nuestro equipo estará encantado de atenderte.</h5>
-                
+<body>
+	<div class="container contact">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="contact-info">
+					<img src="/desarrollo/assets/jpg/LogoEntero.jpg" alt="image"/>
+				</div>
+				<div class="col-md-12">
+					<div class="form-text">
+						<img src="/desarrollo/assets/svg/envelope-at-fill.svg">
+						<label class="control-label for="correo">contacto@ecofresh.com</label>
+					</div>
+					<div class="form-text">
+						<img src="/desarrollo/assets/svg/telephone-fill.svg">
+						<label class="control-label for="phone">+34 627 208 699</label>
+					</div>
+					<div class="form-text">
+						<img src="/desarrollo/assets/svg/geo-alt-fill.svg">
+						<label class="control-label for="ubi">C/ Rúa das Estampiñas, 28003</label>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-9">
-			<div class="contact-form">
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="fname">Nombre</label>
-				  <div class="col-sm-8">          
-					<input type="text" class="form-control" id="fname" placeholder="Introduce tu nombre" name="fname">
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="lname">Apellidos</label>
-				  <div class="col-sm-8">          
-					<input type="text" class="form-control" id="lname" placeholder="Introduce tus apellidos" name="lname">
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="email">Email</label>
-				  <div class="col-sm-8">
-					<input type="email" class="form-control" id="email" placeholder="Introduce tu email" name="email">
-				  </div>
-				</div>
+			<div class="col-md-9">
+				<div class="contact-form">
+					<div class="form-group">
+					  <label class="control-label col-sm-2" for="fname">Nombre</label>
+					  <div class="col-sm-8">          
+						<input type="text" class="form-control" id="fname" placeholder="Introduce tu nombre" name="fname">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label class="control-label col-sm-2 mt-2" for="lname">Apellidos</label>
+					  <div class="col-sm-8">          
+						<input type="text" class="form-control" id="lname" placeholder="Introduce tus apellidos" name="lname">
+					  </div>
+					</div>
 
-                <div class="form-floating col-8 mt-3">
-                    <select class="form-select" id="Select">
-                      <option selected>¿Cómo nos conociste?</option>
-                      <option value="1">Por redes sociales</option>
-                      <option value="2">Por un conocido</option>
-                      <option value="3">A través de internet</option>
-                      <option value="4">A través de un anuncio</option>
-                    </select>
-                </div>
+					<div class="form-group">
+					  <label class="control-label col-sm-2 mt-2" for="email">Email</label>
+					  <div class="col-sm-8">
+						<input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico" name="email">
+					  </div>
+					</div>
 
-				<div class="form-group">
-				  <label class="control-label col-sm-2 mt-3" for="comment">Consultas</label>
-				  <div class="col-sm-10">
-					<textarea class="form-control" rows="5" placeholder="Explique brevemente el motivo de su consulta" id="comment"></textarea>
-				  </div>
-				</div>
+					<div class="form-floating col-sm-4 mt-4">
+						<select class="form-select" id="Select">
+						  <option selected>¿Cómo nos conociste?</option>
+						  <option value="1">Por redes sociales</option>
+						  <option value="2">Por un conocido</option>
+						  <option value="3">A través de internet</option>
+						  <option value="4">A través de un anuncio</option>
+						</select>
+					</div>
 
-				<div class="form-group">        
-				  <div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-primary">Enviar</button>
-				  </div>
+					<div class="form-group">
+					  <label class="control-label col-sm-2 mt-2" for="comment">Consultas</label>
+					  <div class="col-sm-10">
+						<textarea class="form-control" rows="5" placeholder="Explique brevemente el motivo de su consulta" id="comment"></textarea>
+					  </div>
+					</div>
+					<div class="form-group">        
+					  <div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default">Enviar</button>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</body>
+</html>
