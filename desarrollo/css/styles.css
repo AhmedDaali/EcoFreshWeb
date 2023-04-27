@@ -30,6 +30,14 @@
   padding:20px;  
 }
 
+.btn a{
+  color: #fff;
+}
+
+.btn:hover{
+  background-color: #477a52;
+}
+
 #Infor{
   background-color: #74cf88;
   margin-top: 10px;
@@ -102,6 +110,8 @@
 .contact-form button:focus{
   box-shadow:none;
 }
+
+
 
 
 
