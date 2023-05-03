@@ -2,6 +2,7 @@
   margin: 0;
   position: relative;
   min-height: 100vh;
+  padding-bottom: 3em;
 }
 
 .container{
@@ -9,17 +10,23 @@
 }
 
 .logo{
-  width: 100px;
+  width: 75px;
   border-radius: 50px;
 }
 
 #imagen-principal{
   max-width: 100%;
+  width:80%;
   height: auto;
+  
 }
 
 .navbar-nav a{
   color: white;
+}
+
+.navbar-nav a:hover{
+  text-shadow: #ccc 1px 1px 5px;
 }
 
 .btn{
@@ -100,6 +107,7 @@
 .contact-form label{
   font-weight:600;
 }
+
 .contact-form button{
   background: #74cf88;
   color: #fff;
@@ -107,9 +115,25 @@
   width: 25%;
   margin-top: 10px;
 }
+
 .contact-form button:focus{
   box-shadow:none;
 }
+
+#Inicio{
+  padding-top: 5%;  
+}
+
+#Infor, #Contacto{
+  padding-top: 8%;
+  margin-top: 5%;  
+}
+
+.navbar-toggler-icon{
+  color: #fff;
+}
+
+
 
 
 
