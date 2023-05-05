@@ -133,6 +133,11 @@
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .navbar-nav.bg-transparent {
+    background-color: transparent !important;
+  }
+}
 
 
 
