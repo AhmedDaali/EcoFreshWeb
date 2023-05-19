@@ -1,23 +1,42 @@
+import { saveForm } from "./configuracion.js"
 
-function guardar(){
-  db.collection("Consultas").add({
-      nombre: document.getElementById("fname").value,
-      apellidos: document.getElementById("lname").value,
-      email: document.getElementById("email").value,
-      informacion: document.getElementById("select").value,
-      consulta: document.getElementById("comment").value,   
+
+window.addEventListener('DOMContentLoaded', () =>{
+
+})
+
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+ const nombre = contactForm['fname']
+ const apellidos = contactForm['lname']
+ const email = contactForm['email']
+ const informacion = contactForm['select']
+ const consulta = contactForm['comment']
+
+ if(nombre.value === "" || email.value === ""){
+  Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'El nombre y el email son obligatorios',
+    footer: '<strong>Copyright &copy; 2023 ECOFRESH.</strong>'   
   })
-  .then((docRef)=>{
-    // La operación de guardado se completó exitosamente
-    alert("Petición registrada con éxito.")
+ }else{
+
+  saveForm(nombre.value, apellidos.value, email.value, informacion.value, consulta.value);
+  Swal.fire({
+    icon: 'success',
+    title: 'Tu solicitud ha sido enviada con éxito',
+    text: 'En breve nos pondremos en contacto con usted',
+    footer: '<strong>Copyright &copy; 2023 ECOFRESH.</strong>'
     
   })
-  .catch((error)=>{
-    // Ocurrió un error durante la operación de guardado
-    alert("Algo ha fallado.")
-  });
-}
-
+  contactForm.reset();
+ }
+ 
+})
 
 
 
